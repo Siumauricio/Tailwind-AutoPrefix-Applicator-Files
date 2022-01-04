@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {GetZip, Request} from "./Request";
+import {GetZip} from "./Request";
 import {getFileList} from "./Utils";
 const URL = "http://localhost:3001/recieveFile";
 export const ListFiles = ({FileList}) => {
