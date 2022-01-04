@@ -1,14 +1,15 @@
 import "./App.css";
+import {InputFile} from "./InputFile";
+import {ListFiles} from "./ListFiles";
 
 function App() {
    return (
       <div className="App">
-         <header className="App-header"></header>
-         <div className="container">
-            <div className="row">
-               <h1>Hola</h1>
-            </div>
-         </div>
+         <header className="App-header">
+            <h1 className="text-center">Tailwind AutoPrefixer</h1>
+         </header>
+         <h2 className="text-center ">Choose the files</h2>
+         <InputFile />
       </div>
    );
 }
