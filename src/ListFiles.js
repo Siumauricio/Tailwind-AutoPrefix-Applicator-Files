@@ -1,7 +1,8 @@
 import React, {useState} from "react";
+import {Server} from "./config";
 import {GetZip} from "./Request";
 import {getFileList} from "./Utils";
-const URL = "http://localhost:3001/recieveFile";
+
 export const ListFiles = ({FileList}) => {
    const [prefix, setPrefix] = useState("tw-");
    const [loader, setLoader] = useState(false);
@@ -9,7 +10,7 @@ export const ListFiles = ({FileList}) => {
    const handleClick = async () => {
       setLoader(true);
       const contentArray = await getFileList(FileList);
-      await GetZip(URL, prefix, contentArray);
+      await GetZip(Server, prefix, contentArray);
       setLoader(false);
    };
 
