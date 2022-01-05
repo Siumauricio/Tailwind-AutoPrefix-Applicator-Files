@@ -1,5 +1,3 @@
-import React from "react";
-
 export const Request = async (url, prefix, contentArray) => {
    return await fetch(url, {
       method: "POST",

@@ -1,6 +1,5 @@
 import "./App.css";
 import {InputFile} from "./InputFile";
-import {ListFiles} from "./ListFiles";
 
 function App() {
    return (
